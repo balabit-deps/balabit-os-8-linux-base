@@ -1,3 +1,18 @@
+linux-base (4.5ubuntu3.6) focal; urgency=medium
+
+  [ Tim Gardner ]
+  * Add SGX support for Linux >= v5.11 (LP: #1932582)
+    - Added a udev rule for v5.11 SGX device names,
+
+  [ Tim Gardner & Dimitri John Ledkov ]
+    - Add /etc/profile.d/linux-base-sgx.sh and
+    /usr/lib/systemd/system-environment-generators/linux-base-sgx to
+    export environmental variable for out-of-process attestation by
+    default for: tty login sessions; ssh login sessions; systemd
+    user services; systemd system services.
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Wed, 23 Jun 2021 16:39:54 +0100
+
 linux-base (4.5ubuntu3.5) focal; urgency=medium
 
   * Rewrite xx-update-initrd-links to use linux-update-symlinks. This will
