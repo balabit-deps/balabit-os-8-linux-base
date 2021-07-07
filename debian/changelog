@@ -1,3 +1,10 @@
+linux-base (4.5ubuntu3.7) focal; urgency=medium
+
+  * linux-version: Fix sorting of versions provided via stdin to match
+    the output when provided via argv (LP: #1926985).
+
+ -- dann frazier <dann.frazier@canonical.com>  Wed, 07 Jul 2021 14:20:10 -0600
+
 linux-base (4.5ubuntu3.6) focal; urgency=medium
 
   [ Tim Gardner ]
